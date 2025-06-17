@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andressa Souza</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- ====== HEADER ====== -->
     <header>
-        <h1>A.S</h1>
+        <h1>Andressa Souza</h1>
 
         <!-- ====== MENU ====== -->
         <nav class="menu">
@@ -23,57 +25,93 @@
 
     </header>
 
-    <!-- ====== SOBRE ====== -->
-    <section id="sobre">
-        <h1>Sobre Mim</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint ex incidunt totam magnam architecto eaque veritatis earum non consectetur possimus, officia, harum quasi eius sapiente omnis, maxime atque illo nihil? Facere distinctio molestias odio voluptatibus ipsum dignissimos possimus quo magnam, ullam fuga omnis consequatur incidunt tenetur iusto qui laudantium explicabo?</p>
-        <img src="assets/images/Perfil.jpeg" alt="Minha foto de perfil">
-    </section>
+    <main>
+        <!-- ====== SOBRE ====== -->
+        <section id="sobre">
+            <div class="texto">
+                <h1>Sobre Mim</h1>
+                <p>Olá, me chamo Andressa Souza e sou estudante de Análise e Desenvolvimento de Sistemas pela Uninter. Atualmente estou construindo uma base sólida em Python e Lógica de Programação, com planos de expandir meus conhecimentos para outras linguagens em breve. <br> <br>Curiosa e sempre aprendendo, busco crescer e me desenvolver na área ✨</p>
+            </div>
+            <img src="assets/images/Perfil.png" alt="Minha foto de perfil">
+        </section>
 
-    <!-- ====== FORMAÇÃO ====== -->
-    <section id="formacao">
-        <h1>Formação</h1>
+        <!-- ====== FORMAÇÃO ====== -->
+        <section id="formacao">
+            <h1>Formação</h1>
+            <div class="caixas-container">
+                <div class="caixa">
+                    <h2>Faculdade</h2>
+                    <p>Análise e Desenvolvimento de Sistemas - Uninter <br> <br>
+                        Início nov/2024 <br> Término mai/2027
+                    </p>
+                </div>
 
-        <div class="caixa">
-            <h2>Faculdade</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus suscipit minus reiciendis.</p>
-        </div>
+                <div class="caixa">
+                    <h2>Cursos</h2>
+                    <p>Lógica de Programação - SENAI <br>
+                        Jornada Tech - Programa Desenvolve Grupo Boticário<br>
+                        Fundamentos do Python 1 - Cisco Networking Academy <br>
+                        Algoritmos - Curso em Vídeo <br>
+                        Git e Github - Curso em Vídeo <br>
+                        Python 3 Mundo 1 - Curso em Vídeo <br>
+                        Python 3 Mundo 2 - Curso em Vídeo <br>
+                    </p>
+                </div>
 
-        <div class="caixa">
-            <h2>Cursos</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus suscipit minus reiciendis.</p>
-        </div>
+                <div class="caixa">
+                    <h2>Bootcamps</h2>
+                    <p>Python Developer - Suzano + DIO <br>
+                        Front-End do Zero - Ri Happy + DIO <br>
+                        Back-End com Python - Santander + DIO <br>
+                    </p>
+                </div>
+            </div>
 
-        <div class="caixa">
-            <h2>Bootcamps</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus suscipit minus reiciendis.</p>
-        </div>
+        </section>
 
-    </section>
+        <!-- ====== PORTFÓLIO ====== -->
+        <section id="portfolio">
+            <div id="portfolio-conteiner">
+                <div id="imagem">
+                    <img src="assets/images/Portfolio.png" alt="Imagem do portfólio">
+                </div>
 
-    <!-- ====== PORTFÓLIO ====== -->
-     <section id="portfolio">
-        <h1>Portfólio</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa perferendis, odio, ut sequi porro omnis voluptatibus magnam sit illo ex reprehenderit veniam corporis saepe repellat debitis exercitationem fugiat natus expedita.</p>
-        <img src="" alt="Site criado baseado na DIO">
-     </section>
+                <div id="texto-portfolio">
+                    <h1>Portfólio</h1>
+                    <p>Site desenvolvido para o Bootcamp Front-End do Zero da DIO em parceria com a Ri Happy. <br> <br>
+                        A proposta era seguir um layout já pronto do site da DIO, aplicando os conhecimentos adquiridos no Bootcamp. Foram utilizadas as linguagens de marcação HTML e CSS.</p>
+                </div>
 
-    <!-- ====== CONTATO ====== -->
-     <section id="contato">
-        <h1>Contato</h1>
+            </div>
+        </section>
 
-        <form action="" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
+        <!-- ====== CONTATO ====== -->
+        <section id="contato">
+            <h1>Contato</h1>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <div id="estilo-formulario">
+                <!-- Formulário de contato com campos obrigatórios -->
+                <form action="#" method="post">
+                <div class="input-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
 
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <div class="input-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
 
-            <button type="submit">Enviar</button>
-        </form>
-     </section>
+                <div class="input-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+     
 </body>
 </html>

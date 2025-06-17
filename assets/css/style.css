@@ -1,0 +1,420 @@
+/* ======= Estilos Gerais ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: rgb(253, 238, 217);
+}
+
+h1 {
+    color: #27452d;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    color: #27452d;
+}
+
+/* ====== HEADER ====== */
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #282832;
+  height: 100px;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #1f3a1a
+}
+
+header h1 {
+  position: absolute;
+  left: 90px;
+  margin: 0;
+  color:bisque;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+/* ====== MENU ====== */
+.menu {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  height: 100%;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 33px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    color: bisque;
+}
+
+/* ====== SOBRE ====== */
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+    margin: 150px;
+}
+
+#sobre div.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 700px;
+    gap: 15px;
+}
+
+#sobre h1 {
+    align-self: center;
+    font-size: 92px;
+    margin-bottom: 10px;
+}
+
+#sobre p {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+#sobre img {
+    width: 800px;
+    height: 900px;
+    object-fit: cover;
+    border-radius: 70px;
+}
+
+/* ====== FORMAÇÃO ====== */
+#formacao {
+    text-align: center;
+    border-top: 1px solid #282832;
+    margin-bottom: 180px;
+}
+
+#formacao h1 {
+   margin: 90px 0px 60px 0px;
+   font-size: 90px;
+}
+
+.caixas-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+#formacao .caixa {
+    border: 2px solid #27452d;
+    background-color: #27452d;
+    padding: 80px;
+    margin-bottom: 20px;
+    border-radius: 60px;
+    width: 600px;
+    height: 560px;
+}
+
+#formacao .caixa h2 {
+    color: bisque;
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+}
+
+#formacao .caixa p {
+    color: bisque;
+    padding-top: 50px;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* ====== PORTFÓLIO ====== */
+#portfolio {
+    display: flex;
+    border-top: 1px solid #282832;
+}
+
+#portfolio #portfolio-conteiner {
+    display: flex;
+    width: 100vw;
+}
+
+#imagem {
+  width: 70vw;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#imagem img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1.3) translateX(-30px);
+  transform-origin: top center;
+}
+
+#imagem::-webkit-scrollbar {
+  width: 8px;
+}
+
+#imagem::-webkit-scrollbar-track {
+  background: #fff6ed;
+}
+
+#imagem::-webkit-scrollbar-thumb {
+  background-color: #27452d; 
+  border-radius: 10px;
+  border: 2px solid #fff6ed; 
+}
+
+#texto-portfolio {
+  width: 50vw;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+#texto-portfolio h1 {
+  font-size: 90px;
+  margin: 30px 0px 15px 0px;
+}
+
+#texto-portfolio p {
+  font-size: 25px;
+  width: 700px;
+  font-family: 'Oswald', sans-serif;
+}
+/* ====== CONTATO ====== */
+#contato {
+  border-top: 1px solid #282832;
+  text-align: center;
+  padding: 100px 0;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+#contato h1 {
+  font-size: 90px;
+}
+
+#estilo-formulario {
+  background-color: #27452d;
+  max-width: 1700px;
+  margin: 40px auto;
+  padding: 80px 290px;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+#estilo-formulario form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+#estilo-formulario label {
+  color: white;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 25px;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 45%;
+  min-width: 200px;
+}
+
+#estilo-formulario textarea {
+  flex: 1 1 100%;
+  min-width: 100%;
+  resize: vertical;
+  margin-top: 10px;
+}
+
+#estilo-formulario input,
+#estilo-formulario textarea {
+  background-color: rgb(247, 239, 228);
+  border: none;
+  border-radius: 40px;
+  padding: 10px 15px;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+#estilo-formulario button {
+  background-color: #1f3a1a;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 12px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  width: 100%;
+}
+
+#estilo-formulario button:hover {
+  background-color: #3b6b2a;
+}
+
+body::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: #27452d;
+    margin-top: 40px;
+}
+
+/* ========= RESPONSIVIDADE ========= */
+@media (max-width: 768px) {
+  /* Seção SOBRE */
+  #sobre {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px 20px;
+    gap: 30px;
+  }
+
+  #sobre img {
+    width: 90%;
+    height: auto;
+    border-radius: 40px;
+  }
+
+  #sobre .texto {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  #sobre h1 {
+    font-size: 48px;
+  }
+
+  #sobre p {
+    font-size: 18px;
+  }
+
+  /* Seção FORMAÇÃO */
+  #formacao .caixas-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #formacao .caixa {
+    width: 90%;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  #formacao h1 {
+    font-size: 48px;
+    margin: 40px 0 30px 0;
+  }
+
+  /* Seção PORTFÓLIO */
+  #portfolio #portfolio-conteiner {
+    flex-direction: column;
+  }
+
+  #imagem {
+    width: 100%;
+    height: auto;
+  }
+
+  #imagem img {
+    transform: none;
+    width: 100%;
+    height: auto;
+  }
+
+  #texto-portfolio {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  #texto-portfolio h1 {
+    font-size: 48px;
+  }
+
+  #texto-portfolio p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  /* Seção CONTATO */
+  #contato h1 {
+    font-size: 48px;
+  }
+
+  #estilo-formulario {
+    padding: 30px 20px;
+    max-width: 100%;
+  }
+
+  #estilo-formulario form {
+    flex-direction: column;
+  }
+
+  #estilo-formulario .input-group {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+
+  #estilo-formulario input,
+  #estilo-formulario textarea {
+    width: 100%;
+  }
+
+  #estilo-formulario button {
+    width: 100%;
+  }
+
+  /* HEADER */
+  header h1 {
+    position: static;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: bisque;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu ul li a {
+    font-size: 20px;
+  }
+}
